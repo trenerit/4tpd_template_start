@@ -1,0 +1,16 @@
+@if(admin) {
+    <p>To jest ciało if-a</p>
+} @else {
+    <p>To jest ciało else</p>
+}
+
+<!-- najprościej -->
+@if(user === '') {
+    <p class="error">Uzupełnij pole user</p>
+}
+<!-- mona tez tak: wartość true / false z klasy -->
+@if(passError) {
+    <p class="error">Uzupełnij pole hasło</p>
+}
+
+
