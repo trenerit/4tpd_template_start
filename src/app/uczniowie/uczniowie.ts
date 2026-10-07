@@ -8,4 +8,6 @@ import { Component } from '@angular/core';
 })
 export class Uczniowie {
 
+  tabImiona = ['Piotr', 'Anna', 'Włodzimierz', 'Maria'];
+
 }
