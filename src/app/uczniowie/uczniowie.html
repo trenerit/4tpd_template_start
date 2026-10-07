@@ -1,5 +1,14 @@
 <ul>
     @for(elem of tabImiona; track $index) {
-        <li>{{elem}}</li>
+        <li>{{elem}} {{$index+1}}</li>
     }
 </ul>
+
+@for(elem of tabUczniowie; track elem.id) {
+    <p>{{elem.imie}}, {{elem.wiek}}</p>
+}
+
+@for(elem of tabImg; track elem.img) {
+    <img src="{{elem.img}}" alt="{{elem.alt}}" width="200">
+}
+
