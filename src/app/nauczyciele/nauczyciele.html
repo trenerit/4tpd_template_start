@@ -1,16 +1,28 @@
-@if(admin) {
+<form #loginForm="ngForm" (ngSubmit)="loginFormSubmit(loginForm)">
+    <input type="text" name="login" placeholder="login" ngModel>
+    <input type="password" name="pass" ngModel>
+    <button type="submit">Logowanie</button>
+</form>
+
+<!-- @if(admin) {
     <p>To jest ciało if-a</p>
 } @else {
     <p>To jest ciało else</p>
-}
+} -->
 
 <!-- najprościej -->
-@if(user === '') {
+<!-- @if(login === '') {
+    <p class="error">Uzupełnij pole user</p>
+} -->
+
+@if(userError) {
     <p class="error">Uzupełnij pole user</p>
 }
 <!-- mona tez tak: wartość true / false z klasy -->
 @if(passError) {
     <p class="error">Uzupełnij pole hasło</p>
 }
+
+<p>{{result}}</p>
 
 
