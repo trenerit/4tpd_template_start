@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
+import { Component, inject } from '@angular/core';
+import { Router, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-start',
@@ -8,5 +8,11 @@ import { RouterLink } from '@angular/router';
   styleUrl: './start.scss',
 })
 export class Start {
+
+    private router = inject(Router);
+
+  clickStudent(id: number) {
+    this.router.navigate(['uczen', id]);
+  }
 
 }

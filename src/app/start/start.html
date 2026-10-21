@@ -1,5 +1,7 @@
 <menu>
     <button routerLink="/uczniowie">uczniowie</button>
-    <button routerLink="/nauczyciele">nauczyciele</button>
-    <a href="#" [routerLink]="['/uczniowie']">uczniowie</a>
+    <button routerLink="/nauczyciele">nauczyciele</button> 
+    <a href="#" [routerLink]="['/uczniowie']">uczniowie</a> 
+    <a href="#" [routerLink]="['/uczen', 2]">uczeń</a>
+    <button (click)="clickStudent(3)">uczeń click</button>
 </menu>
